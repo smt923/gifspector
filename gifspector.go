@@ -48,6 +48,7 @@ func main() {
 // Prints out a range of interesting stats about the input gif
 func printStats(gifstruct *gif.GIF, path string, name string, shouldsplit bool) {
 	fmt.Printf("--- GIF STATS: %s ---\n", name)
+	fmt.Printf("Number of frames:\n %d\n", len(gifstruct.Image))
 	fmt.Printf("Delay per frame (100ths / sec):\n %d\n", gifstruct.Delay)
 	fmt.Printf("Loop count:\n %d\n", gifstruct.LoopCount)
 	fmt.Printf("Image size (height x width):\n %d x %d\n", gifstruct.Config.Height, gifstruct.Config.Width)
