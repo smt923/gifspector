@@ -10,7 +10,7 @@ Basic usage, to simply print some information about the gif:
 ./gifspector input.gif
 ```
 
-Splitting the file (-s), changing the default output folder (-o) and saving each frame as jpegs (-j)
+Splitting the file (-s), changing the default output folder (-o) and saving each frame as a jpeg (-j)
 ```
 ./gifspector input.gif -s -o frames -j
 ```
