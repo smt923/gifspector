@@ -15,3 +15,4 @@
 
 *.gif
 *.jpeg
+.vscode/launch.json
