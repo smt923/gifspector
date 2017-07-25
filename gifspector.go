@@ -80,7 +80,7 @@ func SplitGIF(gifstruct *gif.GIF, savefolder string, saveasjpeg bool) {
 		outfile, err := os.Create(filename)
 		defer outfile.Close()
 		if err != nil {
-			fmt.Fprintf(os.Stderr, "Error! Could create image: %s", filename)
+			fmt.Fprintf(os.Stderr, "Error! Could not create image: %s", filename)
 		} else {
 			if saveasjpeg {
 				jpeg.Encode(outfile, img, &jpeg.Options{Quality: 100})
@@ -123,7 +123,7 @@ func normalizeTrimLength(startl, endl int, gifstruct *gif.GIF) (start, end int) 
 		end = len(gifstruct.Image)
 	}
 	if start > end {
-		fmt.Fprintf(os.Stderr, "Invalid trim length! The end frame must be larger than the start. Exiting.\n")
+		fmt.Fprintf(os.Stderr, "Invalid trim length! The end frame must be larger than the start frame. Exiting.\n")
 		os.Exit(1)
 	}
 	return start, end
