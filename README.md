@@ -10,15 +10,19 @@ Basic usage, to simply print some information about the gif:
 ./gifspector input.gif
 ```
 
+<<<<<<< HEAD
 You can also trim a gif by specifying the start and, optionally, end frames to trim to (exclusive):
 ```bash
 ./gifspector input.gif 10 # trim from frame 10 to the last frame
 ```
 ```bash
 ./gifspector input.gif 8 10 # trim from frame 8 to frame 10 (2 frames)
+=======
+Splitting the file (`-s`), changing the default output folder (`-o`) and saving each frame as a jpeg (`-j`)
+>>>>>>> 7e31c631bd363dc1deb34a57682936f867ab13a6
 ```
 
-Splitting the file (-s), changing the default output folder (-o) and saving each frame as jpegs (-j)
+Splitting the file (`-s`), changing the default output folder (`-o`) and saving each frame as a jpeg (`-j`)
 ```bash
 ./gifspector input.gif -s -o frames -j
 ```
